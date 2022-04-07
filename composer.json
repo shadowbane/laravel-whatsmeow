@@ -1,0 +1,51 @@
+{
+    "name": "shadowbane/laravel-whatsmeow",
+    "description": "Send Simple WhatsApp message via Whatsmeow API",
+    "keywords": ["whatsapp", "laravel", "whatsmeow", "gomeow"],
+    "type": "project",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Adli I. Ifkar",
+            "email": "adly.shadowbane@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-json": "*",
+        "PHP": "^8.0.2 || ^8.1",
+        "guzzlehttp/guzzle": "^7.4",
+        "illuminate/notifications": "^9.0",
+        "illuminate/support": "^9.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.3",
+        "pestphp/pest": "^1.21",
+        "pestphp/pest-plugin-parallel": "^1.0",
+        "friendsofphp/php-cs-fixer": "^3.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shadowbane\\Whatsmeow\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Shadowbane\\Whatsmeow\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Shadowbane\\Whatsmeow\\WhatsmeowServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "php-cs-fixer": "./vendor/bin/php-cs-fixer fix --config=.php-cs.dist.php"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
