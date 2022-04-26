@@ -73,7 +73,6 @@ class WhatsmeowChannel
 
         // set endpoint
         $this->whatsmeow->setEndpoint('send-message');
-        ray($params);
 
         return $this->whatsmeow->sendMessage($params);
     }
