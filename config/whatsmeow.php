@@ -27,4 +27,10 @@ return [
      * If application is Local AND run in debug mode, send to this number instead
      */
     'debug_number' => env('DEBUG_WHATSAPP_NUMBER', null),
+
+    /*
+     * Debug mode
+     * If true, will send debug output of the http request
+     */
+    'debug_mode' => env('WHATSMEOW_DEBUG_MODE', false),
 ];

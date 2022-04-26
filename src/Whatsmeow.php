@@ -55,7 +55,7 @@ class Whatsmeow
 
             if (app()->environment(['local', 'testing'])) {
                 $httpClient = $httpClient->withOptions([
-                    'debug' => true,
+                    'debug' => config('whatsmeow.debug_mode') ?? false,
                 ]);
             }
 
