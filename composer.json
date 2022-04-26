@@ -10,6 +10,9 @@
             "email": "adly.shadowbane@gmail.com"
         }
     ],
+    "replace": {
+        "shadowbane/laravel-wablas": "*"
+    },
     "require": {
         "ext-json": "*",
         "PHP": "^8.0.2 || ^8.1",
